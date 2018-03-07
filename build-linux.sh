@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "Running the script"
+echo "Running the build script"
 date
 sleep 5
 docker ps

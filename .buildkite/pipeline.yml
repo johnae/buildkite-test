@@ -1,3 +1,6 @@
 steps:
+  - label: Prepare
+    command: ./prepare-linux.sh
+  - wait
   - label: Run that script
-    command: ./script.sh
+    command: ./build-linux.sh
