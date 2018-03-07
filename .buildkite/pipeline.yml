@@ -1,6 +1,10 @@
 steps:
   - label: Prepare
     command: ./prepare-linux.sh
+    agents:
+      queue: linux
   - wait
   - label: Run that script
     command: ./build-linux.sh
+    agents:
+      queue: linux
