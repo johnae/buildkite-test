@@ -1,16 +1,16 @@
 steps:
-  - label: Prepare
+  - label: Linux prepare
     command: ./prepare-linux.sh
     agents:
       queue: linux
   - wait
-  - label: Run that script
+  - label: Linux build 
     command: ./build-linux.sh
     agents:
       queue: linux
   - wait: ~
     continue_on_failure: true
-  - label: Post build
+  - label: Linux post build
     command: ./post-linux.sh
     agents:
       queue: linux
