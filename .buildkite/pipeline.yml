@@ -1,6 +1,6 @@
 steps:
   - label: Linux build
-    command: |
+    command:
       - ./prepare-linux.sh
       - ./build-linux.sh
     agents:
