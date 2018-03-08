@@ -1,15 +1,13 @@
 steps:
   - label: Linux build
     command: |
-      ./prepare-linux.sh
-      ./build-linux.sh
-      ./post-linux.sh
+      - ./prepare-linux.sh
+      - ./build-linux.sh
     agents:
       queue: linux
   - label: OSX build
-    command: |
-      ./prepare-osx.sh
-      ./build-osx.sh
-      ./post-osx.sh
+    command:
+      - ./prepare-osx.sh
+      - ./build-osx.sh
     agents:
       queue: osx
