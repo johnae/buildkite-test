@@ -8,3 +8,9 @@ steps:
     command: ./build-linux.sh
     agents:
       queue: linux
+  - wait: ~
+    continue_on_failure: true
+  - label: Post build
+    command: ./post-linux.sh
+    agents:
+      queue: linux
