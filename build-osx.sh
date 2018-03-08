@@ -2,7 +2,8 @@
 
 at_exit() {
     echo "Shutdown"
-    shutdown -h now ## always kill this box regardless of exit status
+    ## always kill this box regardless of exit status
+    sudo shutdown -h now
 }
 sig_at_exit() {
     trap '' EXIT
