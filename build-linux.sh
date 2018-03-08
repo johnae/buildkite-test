@@ -2,6 +2,6 @@
 
 echo "Running the build script"
 date
-sleep 50 
+sleep 30 
 docker ps
 echo "done"

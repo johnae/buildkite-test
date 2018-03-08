@@ -1,5 +1,5 @@
 #!/bin/sh
 
 echo "build on osx"
-sleep 50
+sleep 30
 echo "build complete"
